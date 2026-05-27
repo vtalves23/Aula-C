@@ -1,3 +1,10 @@
+p,q,p && q
+V,V,V
+V,F,F
+F,V,F
+F,F,F
+
+
 #include <stdio.h>
 
 int main() {

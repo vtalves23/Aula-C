@@ -103,7 +103,7 @@ FLUXOGRAMA
               [FIM]
 
               
-Pseudocódico
+Pseudocódigo
 
 Algoritmo "Acesso_Direto"
 

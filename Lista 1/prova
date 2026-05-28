@@ -1,0 +1,52 @@
+#include <stdio.h>
+
+int main() {
+    int idades[10];
+    int autorizacao;
+    int i;
+    int liberados = 0;
+    int negados = 0;
+    int maiorIdade = 0;
+    int somaIdades = 0;
+    float media;
+
+    // 1. Leitura dos dados dos 10 participantes
+    for(i = 0; i < 10; i++) {
+        printf("--- Participante %d ---\n", i + 1);
+        printf("Digite a idade: ");
+        scanf("%d", &idades[i]);
+        
+        printf("Possui autorizacao? (1-Sim, 0-Nao): ");
+        scanf("%d", &autorizacao);
+
+        // 2. Análise de maior idade e acúmulo para a média
+        somaIdades += idades[i];
+        if(idades[i] > maiorIdade) {
+            maiorIdade = idades[i];
+        }
+
+        // 3. Verificação da regra de entrada (Idade >= 18 OU Autorização == 1)
+        if(idades[i] >= 18 || autorizacao == 1) {
+            printf("Resultado: ENTRADA LIBERADA\n\n");
+            liberados++;
+        } else {
+            printf("Resultado: ENTRADA NEGADA\n\n");
+            negados++;
+        }
+    }
+
+    // 4. Cálculos finais
+    media = (float)somaIdades / 10;
+
+    // Exibição das estatísticas finais
+    printf("=========================================\n");
+    printf("           ESTATISTICAS FINAIS           \n");
+    printf("=========================================\n");
+    printf("Quantidade de entradas liberadas: %d\n", liberados);
+    printf("Quantidade de entradas negadas: %d\n", negados);
+    printf("Maior idade registrada: %d anos\n", maiorIdade);
+    printf("Media das idades: %.2f anos\n", media);
+    printf("=========================================\n");
+
+    return 0;
+}

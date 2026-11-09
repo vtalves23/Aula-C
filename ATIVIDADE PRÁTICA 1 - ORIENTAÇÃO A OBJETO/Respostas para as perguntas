@@ -1,1 +1,7 @@
+Sim. veiculo1, veiculo2 e veiculo3 representam objetos diferentes, criados a partir da mesma classe.
 
+Sim. Todos possuem os mesmos nomes de atributos: marca, modelo, ano, quilometragem e disponibilidade.
+
+Não. Cada objeto pode possuir valores diferentes em seus atributos.
+
+Apenas a quilometragem de veiculo1 será alterada. Os outros veículos continuarão com seus valores originais.

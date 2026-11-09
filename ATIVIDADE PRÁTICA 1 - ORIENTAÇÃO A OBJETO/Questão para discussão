@@ -1,1 +1,1 @@
-
+O aluguel de veiculo1 não altera o estado de veiculo2 porque cada objeto possui seus próprios atributos e mantém seu próprio estado na memória. Mesmo pertencendo à mesma classe, as instâncias são independentes.
